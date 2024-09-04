@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boda de Fernando y Maria</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: white;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Bahia_Santander_2011.jpg/1280px-Bahia_Santander_2011.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            position: relative;
+        }
+
+        header::before {
+            content: "";
+            background-image: url('https://www.pngall.com/wp-content/uploads/2016/04/Flowers-Transparent.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 80px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        p {
+            font-size: 1.5em;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
+
+        section {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            margin: 20px auto;
+            border-radius: 10px;
+            max-width: 500px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 1.2em;
+            margin-top: 15px;
+            text-align: left;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+
+        input[type="submit"] {
+            background-color: #f76c6c;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #e55b5b;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Boda de Fernando y Maria</h1>
+    <p>30 de agosto de 2025</p>
+</header>
+
+<section>
+    <h2>Confirmación de asistencia</h2>
+    <p>Por favor, completa el formulario a continuación para confirmar tu asistencia.</p>
+
+    <form action="https://example.com/submit" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje (opcional):</label>
+        <input type="text" id="mensaje" name="mensaje">
+
+        <input type="submit" value="Confirmar asistencia">
+    </form>
+</section>
+
+</body>
+</html>
